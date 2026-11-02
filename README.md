@@ -1,4 +1,5 @@
 <!-- omit in toc -->
+
 # 🖥️ Displays MQTT Bridge
 
 [![CI](https://img.shields.io/github/actions/workflow/status/tobiaswaelde/displays-mqtt-bridge/ci.yml?style=for-the-badge&label=CI)](https://github.com/tobiaswaelde/displays-mqtt-bridge/actions/workflows/ci.yml) [![Docs](https://img.shields.io/github/actions/workflow/status/tobiaswaelde/displays-mqtt-bridge/docs.yml?style=for-the-badge&label=Docs)](https://github.com/tobiaswaelde/displays-mqtt-bridge/actions/workflows/docs.yml) [![Deploy](https://img.shields.io/github/actions/workflow/status/tobiaswaelde/displays-mqtt-bridge/deploy.yml?style=for-the-badge&label=Deploy)](https://github.com/tobiaswaelde/displays-mqtt-bridge/actions/workflows/deploy.yml)
@@ -69,7 +70,7 @@ mqtt:
   protocol: mqtt
   host: mosquitto
   port: 1883
-  client_id: ''
+  client_id: ""
   username: screen-control
   password: change-me
 topic: screens/office
@@ -147,3 +148,7 @@ Brightness is set through the standard MCCS VCP feature `0x10` (luminance). The 
 ## 🔄 CI and deployment
 
 GitHub Actions runs formatting, Clippy, tests, a release build, and a Docker image build for pull requests and pushes to `main`. Pushing a version tag such as `v1.2.3` builds and publishes the image to GitHub Container Registry under `ghcr.io/<owner>/displays-mqtt-bridge` with the tags `1.2.3`, `1.2`, and `latest`. The deployment workflow can also be started manually and requires an additional image tag.
+
+## Maintenance
+
+Documentation builds use Node.js 26.13.0 LTS and the pinned pnpm version. The Rust bridge uses the Cargo lockfile; release tags follow the Cargo package version.
