@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.3] - 2026-11-09
+
+- Update compatible Rust, documentation, container and workflow dependencies.
+- Enable available dependency, secret and Rust source analysis.
+- Preserve documented MQTT and monitor-control behavior.
+- Retain the documented upstream bundled-YAML advisory; no external YAML reaches that parser.
+
 ## [0.1.1] - 2026-08-26
 
 ### Added
