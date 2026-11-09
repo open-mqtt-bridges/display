@@ -8,5 +8,14 @@
   "scripts": {
     "docs:dev": "pnpm --dir docs dev",
     "docs:build": "pnpm --dir docs build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-mqtt-bridges/display.git"
+  },
+  "homepage": "https://open-mqtt-bridges.github.io/display/",
+  "bugs": {
+    "url": "https://github.com/open-mqtt-bridges/display/issues"
   }
 }
