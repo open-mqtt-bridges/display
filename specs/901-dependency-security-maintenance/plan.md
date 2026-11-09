@@ -15,3 +15,7 @@ T1 records baseline/targets; T2 verifies security settings and scanner configura
 ## Validation
 
 Use documented local checks, clean immutable installs, relevant container/health checks and post-update audits. Rust requires format, Clippy, tests and release build plus RustSec. Website requires browser/mobile/keyboard verification. Existing failures and external limitations remain explicit. Details and actual results are recorded in `audit.md`.
+
+## Release 0.1.3
+
+Bump Cargo.toml and the owning lockfile, add release notes, validate format/Clippy/tests/release build and current-head CI, then merge the release PR. The existing main workflow tags the new package version, creates its GitHub release and publishes the versioned/latest GHCR image. Verify these artifacts and Pages deployment.

@@ -20,3 +20,6 @@
 Execution follows the approved website-first repository order. Independent external metadata reads may run concurrently; commits remain scoped to tested implementation groups.
 
 T3/T4 share the Node dependency graph and are validated as one coherent compatibility update; independent Cargo and documentation groups receive separate commits. Current-head CI is recorded in the hosting PR and linked issue.
+
+- [x] T6 Prepare 0.1.3 package/lockfile/release notes and validate Rust checks.
+- [ ] T7 Merge the release PR after CI, then verify release/image/Pages.

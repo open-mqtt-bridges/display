@@ -13,3 +13,7 @@ Issue: https://github.com/open-mqtt-bridges/display/issues/22
 Preserve MQTT topics, payloads, retention, configuration keys and deployment/package identifiers. Use existing package-manager and runtime pins. No prereleases, forced peer/engine acceptance, relaxed security rules, unrelated formatting, releases or deployments. Keep archived idm-energy untouched. TypeScript 7 requires compatible parser/lint/test peer ranges. Roborock 3.40.3 requires official Node 26 engine support. Preserve old feature specifications and the website logo branch.
 
 All adopted updates require clean immutable installation, applicable local checks and current-head CI. Fix actionable advisories; explicitly record unavailable security features, unresolved advisories and deferred targets. Merge approval remains separate.
+
+## Authorized release follow-up
+
+The user authorizes PR merges and new version deployment. Publish the dependency/security maintenance as patch version 0.1.3 through existing tag/release/GHCR workflows. Preserve MQTT, configuration and monitor-control contracts. The previously documented unreachable bundled-YAML advisory remains disclosed.
