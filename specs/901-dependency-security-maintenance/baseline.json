@@ -1,0 +1,13 @@
+{
+  "base": "145758f1df81675228664dee251e6fb840603290",
+  "runtime": {
+    "node": ">=26.13.0 <27"
+  },
+  "packageManager": "pnpm@11.28.9",
+  "manifests": {
+    "package.json": "{\n  \"name\": \"displays-mqtt-bridge\",\n  \"private\": true,\n  \"packageManager\": \"pnpm@11.28.9\",\n  \"engines\": {\n    \"node\": \">=26.13.0 <27\"\n  },\n  \"scripts\": {\n    \"docs:dev\": \"pnpm --dir docs dev\",\n    \"docs:build\": \"pnpm --dir docs build\"\n  },\n  \"license\": \"MIT\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/open-mqtt-bridges/display.git\"\n  },\n  \"homepage\": \"https://open-mqtt-bridges.github.io/display/\",\n  \"bugs\": {\n    \"url\": \"https://github.com/open-mqtt-bridges/display/issues\"\n  }\n}\n",
+    "docs/package.json": "{\n  \"name\": \"displays-mqtt-bridge-docs\",\n  \"private\": true,\n  \"scripts\": {\n    \"dev\": \"vitepress dev .\",\n    \"build\": \"vitepress build .\",\n    \"preview\": \"vitepress preview .\"\n  },\n  \"devDependencies\": {\n    \"vitepress\": \"^1.6.4\"\n  }\n}\n",
+    "pnpm-workspace.yaml": "packages:\n  - docs\nallowBuilds:\n  esbuild: true\n  unrs-resolver: true\noverrides:\n  vite: ^6.4.3\n",
+    "Cargo.toml": "[package]\nname = \"displays-mqtt-bridge\"\nversion = \"0.1.2\"\nedition = \"2024\"\nrepository = \"https://github.com/open-mqtt-bridges/display\"\nhomepage = \"https://open-mqtt-bridges.github.io/display/\"\nlicense = \"MIT\"\ndescription = \"Control DDC/CI monitor brightness through MQTT\"\n\n[dependencies]\nanyhow = \"1.0.100\"\nclap = { version = \"4.5.53\", features = [\"derive\"] }\nddc-hi = { version = \"0.4.1\", default-features = false, features = [\"ddc-i2c\"] }\nrumqttc = { version = \"0.25.1\", default-features = false, features = [\"url\", \"use-native-tls\"] }\nserde = { version = \"1.0.228\", features = [\"derive\"] }\nserde_json = \"1.0.145\"\nserde_yaml = \"0.9.34\"\ntracing = \"0.1.41\"\ntracing-subscriber = { version = \"0.3.20\", features = [\"env-filter\"] }\ntokio = { version = \"1.48.0\", features = [\"macros\", \"rt-multi-thread\", \"sync\", \"time\"] }\nuuid = { version = \"1.19.0\", features = [\"v4\"] }\n\n[patch.crates-io]\n# ddc-hi currently requires nom 3.x. This compatible local patch removes syntax\n# that newer Rust versions have made a future incompatibility warning.\nnom = { path = \"third_party/nom-3.2.1\" }\n"
+  }
+}
