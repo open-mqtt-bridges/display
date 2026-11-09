@@ -52,4 +52,8 @@ RustSec still reports [RUSTSEC-2018-0005](https://rustsec.org/advisories/RUSTSEC
 
 ## Delivery
 
-One consolidated PR will close the linked issue. Existing matching Dependabot PRs remain open and are linked as superseded. Required CI must pass on the PR current head before any separately authorized merge. No release, deployment or release-PR merge was performed.
+PR: https://github.com/open-mqtt-bridges/display/pull/23; closes #22. Existing matching Dependabot PRs remain open and are linked as superseded. Required CI must pass on the PR current head before any separately authorized merge. No release, deployment or release-PR merge was performed.
+
+## Hosted CI evidence
+
+All reported checks on implementation head `aa68628b44d1982a923c7f58dfe63585ea0e4ee7` completed without failures at 2026-11-09T13:23:15.934296+00:00. Deployment jobs were intentionally skipped on the PR. CodeQL PR analysis completed for the supported source language. This final documentation-only task update follows that successful implementation verification; the current PR checks remain authoritative before merge.
