@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Displays MQTT Bridge',
   description: 'DDC/CI display control through MQTT',
-  base: '/displays-mqtt-bridge/',
+  base: '/display/',
   cleanUrls: true,
   lastUpdated: true,
   head: [
     [
       'link',
-      { rel: 'icon', type: 'image/svg+xml', href: '/displays-mqtt-bridge/favicon.svg' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/display/favicon.svg' },
     ],
   ],
   themeConfig: {
@@ -31,9 +31,9 @@ export default defineConfig({
       { text: 'Troubleshooting', link: '/troubleshooting' },
     ],
     editLink: {
-      pattern: 'https://github.com/tobiaswaelde/displays-mqtt-bridge/edit/main/docs/:path',
+      pattern: 'https://github.com/open-mqtt-bridges/display/edit/main/docs/:path',
       text: 'Edit this page on GitHub',
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/tobiaswaelde/displays-mqtt-bridge' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/open-mqtt-bridges/display' }],
   },
 });

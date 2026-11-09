@@ -2,13 +2,13 @@
 
 # 🖥️ Displays MQTT Bridge
 
-[![CI](https://img.shields.io/github/actions/workflow/status/tobiaswaelde/displays-mqtt-bridge/ci.yml?style=for-the-badge&label=CI)](https://github.com/tobiaswaelde/displays-mqtt-bridge/actions/workflows/ci.yml) [![Docs](https://img.shields.io/github/actions/workflow/status/tobiaswaelde/displays-mqtt-bridge/docs.yml?style=for-the-badge&label=Docs)](https://github.com/tobiaswaelde/displays-mqtt-bridge/actions/workflows/docs.yml) [![Deploy](https://img.shields.io/github/actions/workflow/status/tobiaswaelde/displays-mqtt-bridge/deploy.yml?style=for-the-badge&label=Deploy)](https://github.com/tobiaswaelde/displays-mqtt-bridge/actions/workflows/deploy.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/open-mqtt-bridges/display/ci.yml?style=for-the-badge&label=CI)](https://github.com/open-mqtt-bridges/display/actions/workflows/ci.yml) [![Docs](https://img.shields.io/github/actions/workflow/status/open-mqtt-bridges/display/docs.yml?style=for-the-badge&label=Docs)](https://github.com/open-mqtt-bridges/display/actions/workflows/docs.yml) [![Deploy](https://img.shields.io/github/actions/workflow/status/open-mqtt-bridges/display/deploy.yml?style=for-the-badge&label=Deploy)](https://github.com/open-mqtt-bridges/display/actions/workflows/deploy.yml)
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-tobiaswaelde-FFDD00?style=for-the-badge&logo=buymeacoffee)](https://www.buymeacoffee.com/tobiaswaelde)
 
 A small Rust service that controls DDC/CI-capable external monitors through MQTT. It detects every monitor available through the mounted `/dev/i2c-*` devices and can set the brightness of an individual display or every display at once.
 
-Full documentation is available at [tobiaswaelde.github.io/displays-mqtt-bridge](https://tobiaswaelde.github.io/displays-mqtt-bridge/).
+Full documentation is available at [open-mqtt-bridges.github.io/display](https://open-mqtt-bridges.github.io/display/).
 
 - [🚀 Quick start](#-quick-start)
 - [🐳 Docker](#-docker)
@@ -152,3 +152,7 @@ GitHub Actions runs formatting, Clippy, tests, a release build, and a Docker ima
 ## Maintenance
 
 Documentation builds use Node.js 26.13.0 LTS and the pinned pnpm version. The Rust bridge uses the Cargo lockfile; release tags follow the Cargo package version.
+
+## Contributing
+
+See the [development guide](docs/development.md) for the pinned toolchain, checks and Spec Kit usage, and the [organization contribution guide](https://github.com/open-mqtt-bridges/.github/blob/main/CONTRIBUTING.md) for pull requests.

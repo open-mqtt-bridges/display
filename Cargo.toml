@@ -2,6 +2,8 @@
 name = "displays-mqtt-bridge"
 version = "0.1.2"
 edition = "2024"
+repository = "https://github.com/open-mqtt-bridges/display"
+homepage = "https://open-mqtt-bridges.github.io/display/"
 license = "MIT"
 description = "Control DDC/CI monitor brightness through MQTT"
 
